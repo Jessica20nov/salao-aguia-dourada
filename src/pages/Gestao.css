@@ -1,0 +1,35 @@
+.btn-add-product {
+    background-color: #a1790a; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-add-product:hover {
+    background-color:  #a1790a;
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+  }
+  
+  .btn-add-product i {
+    font-size: 1.2rem; /* Tamanho do ícone */
+  }
+
+  .btn-sm i {
+    font-size: 1rem; /* Aumenta o tamanho dos ícones */
+    align-content: center;
+  }
+  
+  .btn-sm {
+    padding: 4px 18px; /* Ajusta o tamanho do botão */
+    background-color:#a1790a;
+  }
+
+  

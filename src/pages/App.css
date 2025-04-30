@@ -1,0 +1,35 @@
+.sidebar {
+    width: 200px;
+    min-height: 100vh;
+    background-color: #f0e6c5;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.header-bar {
+    background-color: #d4af37; /* Cor dourada */
+    color: white; /* Texto branco */
+    text-align: center; /* Centralizar o texto */
+    padding: 10px 0; /* Espaçamento interno */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+  }

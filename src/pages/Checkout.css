@@ -1,0 +1,35 @@
+.btn-delete {
+  background-color: #dc3545 !important;
+  color: white !important;
+  padding: 5px 8px;
+  font-size: 0.8rem;
+  max-width: 30px;
+  max-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  border: none !important;
+  border-radius: 4px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.btn-delete:hover {
+  background-color: #c82333 !important;
+}
+  .btn-finalizar {
+    padding: 5px 5px; /* Reduz o tamanho do botão */
+    max-width: 200px; /* Limita a largura máxima do botão */
+    font-size: 0.9rem; /* Diminui o tamanho da fonte */
+    width: auto; /* Remove o comportamento de largura total */
+    display: inline-block; /* Garante que o botão não ocupe toda a largura */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+  }
+
+  .info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }

@@ -1,0 +1,92 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Layout responsivo */
+  gap: 20px; /* Espaçamento entre os itens */
+  padding: 20px; /* Espaçamento interno */
+}
+
+.item {
+  background-color: #f8f9fa; /* Cor de fundo suave */
+  border: 1px solid #ddd; /* Borda leve */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 15px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animação ao passar o mouse */
+}
+
+.item:hover {
+  transform: translateY(-5px); /* Eleva o item ao passar o mouse */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Aumenta a sombra */
+}
+
+.item img {
+  max-width: 100%; /* Ajusta a largura da imagem */
+  max-height: 150px; /* Limita a altura da imagem */
+  border-radius: 8px; /* Bordas arredondadas */
+  margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
+.item p {
+  font-size: 1.1rem; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  color: #333; /* Cor do texto */
+  margin-bottom: 10px; /* Espaçamento abaixo do texto */
+}
+
+.item .btn {
+  background-color: #007bff; /* Cor do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remove a borda padrão */
+  padding: 10px 15px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: background-color 0.2s ease; /* Animação ao passar o mouse */
+}
+
+.item .btn:hover {
+  background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+.products-header-bar {
+  display: flex; /* Garante que os itens estejam em linha */
+  justify-content: space-between; /* Espaça o título e os ícones */
+  align-items: center; /* Alinha os itens verticalmente */
+  background-color: #f8f9fa; /* Fundo claro */
+  padding: 10px 20px; /* Espaçamento interno */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 1.5rem;
+  color: #007bff;
+  cursor: pointer;
+  margin-right: 15px; /* Espaçamento entre o carrinho e o logout */
+}
+
+.cart-icon:hover {
+  color: #0056b3;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+.logout-icon {
+  font-size: 1.5rem;
+  color: #dc3545; /* Vermelho */
+  cursor: pointer;
+}
+
+.logout-icon:hover {
+  color: #a71d2a; /* Vermelho mais escuro ao passar o mouse */
+}
