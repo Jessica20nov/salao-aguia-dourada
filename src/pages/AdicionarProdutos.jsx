@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from '../firebase';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
+import "./AdicionarProdutos.css"; // Importa o CSS para estilização
 
 function AdicionarProduto() {
   const [produto, setProduto] = useState("");
@@ -10,6 +11,7 @@ function AdicionarProduto() {
   const [quantidadeEstoque, setQuantidadeEstoque] = useState("");
   const [imagem, setImagem] = useState(""); // Novo estado para a URL da imagem
   const navigate = useNavigate();
+
 
   // Função para adicionar o produto ao Firestore
   const handleAddProduct = async (e) => {
@@ -42,6 +44,8 @@ function AdicionarProduto() {
 
   return (
     <form onSubmit={handleAddProduct}>
+      <h3>Adicione um produto</h3>
+      <br></br>
       <div>
         <label>Produto:</label>
         <input
@@ -94,11 +98,13 @@ function AdicionarProduto() {
         />
       </div>
       <br />
-      <button type="submit" className="btn btn-secondary">Adicionar Produto</button>
-      <button type="button" className="btn btn-secondary"
+      <button type="submit" className="btn btn-adicionar-produto">Adicionar Produto</button>
+      <button
+        type="button"
+        className="btn btn-voltar"
         onClick={() => navigate("/gestao")} // Redireciona para a página de Gestão
       >
-        Voltar
+        <i className="bi bi-arrow-left"></i> Voltar
       </button>
     </form>
   );

@@ -1,0 +1,39 @@
+.btn-adicionar-produto {
+    background-color: #333; /* Cor dourada */
+    color: white; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease; /* Animação ao passar o mouse */
+  }
+  
+  .btn-adicionar-produto:hover {
+    background-color: #b38e2c; /* Dourado mais escuro ao passar o mouse */
+  }
+
+  .btn-voltar {
+    background-color: #6c757d; /* Cinza */
+    color: white; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    padding: 8px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-weight: bold; /* Texto em negrito */
+    display: flex; /* Para alinhar o ícone e o texto */
+    align-items: center; /* Centraliza o ícone verticalmente */
+    gap: 8px; /* Espaço entre o ícone e o texto */
+    transition: background-color 0.3s ease; /* Animação ao passar o mouse */
+  }
+  
+  .btn-voltar:hover {
+    background-color: #5a6268; /* Cinza mais escuro ao passar o mouse */
+  }
+  
+  .header-buttons {
+    display: flex;
+    justify-content: space-between; /* Espaça os botões */
+    align-items: center;
+    margin-bottom: 20px; /* Espaçamento inferior */
+  }

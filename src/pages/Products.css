@@ -8,7 +8,7 @@
 .item {
   background-color: #f8f9fa; /* Cor de fundo suave */
   border: 1px solid #ddd; /* Borda leve */
-  border-radius: 8px; /* Bordas arredondadas */
+  border-radius: 10px; /* Bordas arredondadas */
   padding: 15px; /* Espaçamento interno */
   text-align: center; /* Centraliza o conteúdo */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
@@ -28,14 +28,19 @@
 }
 
 .item p {
-  font-size: 1.1rem; /* Tamanho da fonte */
-  font-weight: bold; /* Negrito */
+  font-size: 0.9rem; /* Tamanho da fonte */
   color: #333; /* Cor do texto */
+  font-weight: bold; /* Texto em negrito */
   margin-bottom: 10px; /* Espaçamento abaixo do texto */
 }
 
+.item p span {
+  font-size: 0.85rem; /* Tamanho menor para o valor */
+  color: #555; /* Cor mais suave */
+}
+
 .item .btn {
-  background-color: #007bff; /* Cor do botão */
+  background-color: #b08504;; /* Cor do botão */
   color: white; /* Cor do texto do botão */
   border: none; /* Remove a borda padrão */
   padding: 10px 15px; /* Espaçamento interno do botão */
@@ -45,16 +50,30 @@
 }
 
 .item .btn:hover {
-  background-color: #0056b3; /* Cor do botão ao passar o mouse */
+  background-color: #e0a800; /* Cor do botão ao passar o mouse */
 }
 
 .products-header-bar {
   display: flex; /* Garante que os itens estejam em linha */
   justify-content: space-between; /* Espaça o título e os ícones */
   align-items: center; /* Alinha os itens verticalmente */
-  background-color: #f8f9fa; /* Fundo claro */
-  padding: 10px 20px; /* Espaçamento interno */
+  background: linear-gradient(90deg, #feffff, #f3efe4);
+  background-color:white; /* Fundo claro */
+  padding: 15px 20px; /* Espaçamento interno */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+  border-radius: 8px;
+}
+
+.products-header-bar h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre o texto e o ícone */
+}
+
+.products-header-bar h4 i {
+  font-size: 1.8rem; /* Tamanho do ícone */
 }
 
 .cart-icon {

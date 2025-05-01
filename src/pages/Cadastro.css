@@ -40,7 +40,7 @@
   .btn {
     width: 20%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #333;
     color: white;
     border: none;
     margin-bottom: 20px; 
@@ -50,6 +50,6 @@
   }
   
   .btn:hover {
-    background-color: #0056b3;
+    background-color: #655a08;
   }
   

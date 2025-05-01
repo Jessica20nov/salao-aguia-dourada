@@ -3,9 +3,8 @@ import { Bar } from "react-chartjs-2";
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend} from "chart.js";
 import { collection, getDocs, deleteDoc, doc, updateDoc} from "firebase/firestore";
 import { db } from "../firebase";
-import { auth } from "../firebase";
-import { Link, useNavigate } from "react-router-dom";
-import "./AdicionarProdutos.jsx";
+import { useNavigate } from "react-router-dom";
+import "./AdicionarProdutos"
 import "./Gestao.css";
 
 ChartJS.register( CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
@@ -47,7 +46,7 @@ function Gestao() {
           {
             label: "Quantidade Vendida",
             data,
-            backgroundColor: "rgba(236, 239, 181, 0.89)",
+            backgroundColor: "#333",
             borderColor: "rgba(0,0,0,1)",
             borderWidth: 1
           }
@@ -128,7 +127,7 @@ function Gestao() {
       <h2>Gestão de Vendas</h2>
       <p>Aqui você pode acompanhar as vendas do salão.</p>
 
-      <div style={{ height: "250px", width: "600px" }}>
+      <div style={{ height: "250px", width: "500px" }}>
         {chartData ? (
           <Bar data={chartData} options={options} />
         ) : (
@@ -139,7 +138,6 @@ function Gestao() {
       <br />
       <br />
       <h5>Gestão de Produtos</h5>
-      <br />
       <button
   className="btn btn-add-product"
   onClick={() => navigate("/adicionar-produto")}

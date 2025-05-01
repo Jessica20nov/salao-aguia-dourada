@@ -24,23 +24,31 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
-      <ul>
+    <ul>
+      <li>
+        <Link to="/products">
+          <i className="bi bi-box-seam"></i> Produtos
+        </Link>
+      </li>
+      <li>
+        <Link to="/checkout">
+          <i className="bi bi-cart"></i> Checkout
+        </Link>
+      </li>
+      <li>
+        <Link to="/sobre">
+          <i className="bi bi-info-circle"></i> Sobre
+        </Link>
+      </li>
+      {isAdmin && (
         <li>
-          <Link to="/products">Produtos</Link>
+          <Link to="/gestao">
+            <i className="bi bi-gear"></i> Gestão
+          </Link>
         </li>
-        <li>
-          <Link to="/checkout">Checkout</Link>
-        </li>
-        <li>
-          <Link to="/sobre">Sobre</Link>
-        </li>
-        {isAdmin && ( // Exibe a página de Gestão apenas para administradores
-          <li>
-            <Link to="/gestao">Gestão</Link>
-          </li>
-        )}
-      </ul>
-    </div>
+      )}
+    </ul>
+  </div>
   );
 }
 

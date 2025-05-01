@@ -19,7 +19,8 @@ function App() {
   <Router>
     <div>
       <header className="header-bar">
-        <h1>Salão Àguia Dourada</h1>
+        <h1>Salão</h1>
+        <h1>Águia Dourada</h1>
     </header>
     </div>
     <div className="d-flex">

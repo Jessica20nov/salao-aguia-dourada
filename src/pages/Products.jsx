@@ -41,17 +41,19 @@ function Products() {
     return (
         <div className="main-content">
             {/* Menu Superior */}
-            <header className="products-header-bar d-flex justify-content-between align-items-center p-3">
-    <h4 style={{ color: "black", margin: 0 }}>Produtos</h4>
-    <div className="d-flex align-items-center">
-        <div className="cart-icon me-3" onClick={() => navigate("/Checkout")}>
-            <i className="bi bi-cart-fill"></i> {/* Ícone de carrinho */}
-            {cart.length > 0 && <span className="cart-count">{cart.length}</span>}
-        </div>
-        <div className="logout-icon" onClick={handleLogout} style={{ cursor: "pointer" }}>
-            <i className="bi bi-box-arrow-right"></i> {/* Ícone de logout */}
-        </div>
+            <header className="products-header-bar">
+  <h4>
+    <i className="bi bi-box-seam"></i> Produtos
+  </h4>
+  <div className="d-flex align-items-center">
+    <div className="cart-icon me-3" onClick={() => navigate("/Checkout")}>
+      <i className="bi bi-cart-fill"></i>
+      {cart.length > 0 && <span className="cart-count">{cart.length}</span>}
     </div>
+    <div className="logout-icon" onClick={handleLogout}>
+      <i className="bi bi-box-arrow-right"></i>
+    </div>
+  </div>
 </header>
 
             {/* Lista de Produtos */}
@@ -62,7 +64,7 @@ function Products() {
                         <p>{produto.produto}</p>
                         <p>Valor: R$ {produto.valor.toFixed(2)}</p>
                         <button  style={{
-    backgroundColor: "rgba(255, 215, 0)",
+    backgroundColor: "#333",
     color: "white",
     border: "none",
     padding: "10px 15px",

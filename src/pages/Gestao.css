@@ -1,5 +1,5 @@
-.btn-add-product {
-    background-color: #a1790a; 
+.main-content .btn-add-product {
+    background-color: #333; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -32,4 +32,38 @@
     background-color:#a1790a;
   }
 
-  
+  /* Botão de Editar */
+.btn-primary.btn-sm {
+  background-color: #d4af37; /* Dourado */
+  color: white; /* Cor do ícone */
+  border: none; /* Remove a borda padrão */
+  width: 40px; /* Largura fixa para o botão */
+  height: 40px; /* Altura fixa para o botão */
+  display: flex; /* Centraliza o ícone */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.btn-primary.btn-sm:hover {
+  background-color: #b8860b; /* Dourado mais escuro ao passar o mouse */
+}
+
+/* Botão de Excluir */
+.btn-danger.btn-sm {
+  background-color: #dc3545; /* Vermelho */
+  color: white; /* Cor do ícone */
+  border: none; /* Remove a borda padrão */
+  width: 40px; /* Largura fixa para o botão */
+  height: 40px; /* Altura fixa para o botão */
+  display: flex; /* Centraliza o ícone */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.btn-danger.btn-sm:hover {
+  background-color: #c82333; /* Vermelho mais escuro ao passar o mouse */
+}

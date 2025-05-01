@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, db } from "../firebase";
 import { doc, getDoc } from "firebase/firestore";
+import "./FinalizarCompra.css";
 
 const FinalizarCompra = () => {
   const [user, loading] = useAuthState(auth); // Verifica se o cliente está logado
@@ -37,7 +38,7 @@ const FinalizarCompra = () => {
   return (
     <div className="container mt-4">
       <div className="card p-4 shadow-sm">
-        <h3 className="text-center mb-3">Confirmação de Endereço</h3>
+        <h5 className="text-center mb-3">Confirmação de Endereço</h5>
         {cliente ? (
           <>
             <p><strong>Olá,</strong> {cliente.nome} {cliente.sobrenome}</p>
@@ -49,24 +50,23 @@ const FinalizarCompra = () => {
               <li><strong>Estado:</strong> {cliente.endereco.estado}</li>
             </ul>
             <button
-              className="btn btn-success w-100 mt-3"
+              className="btn btn-success btn-confirmar-compra mt-3"
               onClick={() => alert("Compra finalizada com sucesso! Você receberá mais informações no e-mail.")}
             >
               Confirmar Compra
             </button>
 
-            <div>
-  <br></br>
-  <br></br>
-<h5 className="text-center mb-3">💰 Facilidade no pagamento! 💰</h5>
-<p className="text-center">Pague no momento da entrega com a opção que mais combina com você:</p>
-<ul className="list-group list-group-flush">
-  <li className="list-group-item">✔ Cartão de débito</li>
-  <li className="list-group-item">✔ Cartão de crédito</li>
-  <li className="list-group-item">✔ Dinheiro</li>
-  <li className="list-group-item">✔ Pix</li>
-</ul>
-</div>
+            <div className="pagamento-info">
+              <br></br>
+              <h5 className="text-center mb-3">💰 Facilidade no pagamento! 💰</h5>
+              <p>Pague no momento da entrega com a opção que mais combina com você:</p>
+              <ul>
+                <li>✔ Cartão de débito</li>
+                <li>✔ Cartão de crédito</li>
+                <li>✔ Dinheiro</li>
+                <li>✔ Pix</li>
+              </ul>
+            </div>
           </>
         ) : (
           <p>Carregando informações do cliente...</p>
@@ -74,7 +74,7 @@ const FinalizarCompra = () => {
       </div>
     </div>
 
-    
+
   );
 };
 

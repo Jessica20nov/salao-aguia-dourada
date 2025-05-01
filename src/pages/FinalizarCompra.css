@@ -1,0 +1,23 @@
+.btn-confirmar-compra {
+    background-color: #333;
+    width: 50%; /* Reduz a largura do botão */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    display: block; /* Garante que o botão seja tratado como um bloco */
+    padding: 8px 15px; /* Ajusta o espaçamento interno */
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    border-radius: 5px; /* Mantém as bordas arredondadas */
+  }
+
+  .pagamento-info {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Adiciona espaçamento superior */
+  }
+  
+  .pagamento-info ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+  }
+  
+  .pagamento-info ul li {
+    margin: 5px 0; /* Adiciona espaçamento entre os itens */
+  }

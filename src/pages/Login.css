@@ -37,16 +37,38 @@
     text-align: center;
   }
   
-  .btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  .login-container .btn-entrar {
+    background-color: #333; /* Cor azul */
+    color: white; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-weight: bold; /* Texto em negrito */
+    text-align: center;
+    display: block; /* Garante que o botão seja tratado como um bloco */
+    margin: 20px auto; /* Centraliza o botão horizontalmente */
+    transition: background-color 0.3s ease; /* Animação ao passar o mouse */
   }
   
-  .btn:hover {
-    background-color: #0056b3;
+  .login-container .btn:hover {
+    background-color: #654806;
+  }
+
+  .cadastro-link {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Adiciona espaçamento superior */
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    color: #333; /* Cor do texto */
+  }
+  
+  .cadastro-link a {
+    color: #4e4b05; /* Cor azul para o link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o link em negrito */
+  }
+  
+  .cadastro-link a:hover {
+    color: #f2bb08; /* Azul mais escuro ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
   }

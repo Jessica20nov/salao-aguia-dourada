@@ -148,6 +148,13 @@ function Cadastro() {
         <button type="submit" className="btn btn-primary">
           Cadastrar
         </button>
+        <button
+        type="button"
+        className="btn btn-voltar"
+        onClick={() => navigate("/login")} // Redireciona para a página de Gestão
+      >
+        <i className="bi bi-arrow-left"></i> Voltar
+      </button>
       </form>
     </div>
   );
