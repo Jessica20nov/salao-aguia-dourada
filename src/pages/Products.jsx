@@ -3,14 +3,24 @@ import { collection, getDocs } from "firebase/firestore";
 import { db, auth } from "../firebase"; // Importa a configuração do Firebase
 import { CartContext } from "../context/CartContext";
 import { useNavigate } from "react-router-dom"; // Para redirecionar para o checkout
-import { signOut } from "firebase/auth";
+import { signOut, onAuthStateChanged } from "firebase/auth";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Products.css";
 
 function Products() {
     const [produtos, setProdutos] = useState([]);
+    const [user, setUser] = useState(null);
     const { addToCart, cart } = useContext(CartContext); // Obtém o estado do carrinho
     const navigate = useNavigate();
+
+    useEffect(() => {
+        // Verifica o estado de autenticação
+        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+            setUser(currentUser); // Atualiza o estado com o cliente logado
+        });
+
+        return () => unsubscribe(); // Limpa o listener ao desmontar o componente
+    }, []);
 
     useEffect(() => {
         const fetchProdutos = async () => {
@@ -50,9 +60,11 @@ function Products() {
       <i className="bi bi-cart-fill"></i>
       {cart.length > 0 && <span className="cart-count">{cart.length}</span>}
     </div>
-    <div className="logout-icon" onClick={handleLogout}>
-      <i className="bi bi-box-arrow-right"></i>
-    </div>
+    {user && ( // Exibe o ícone de logout apenas se o cliente estiver logado
+                        <div className="logout-icon" onClick={handleLogout}>
+                            <i className="bi bi-box-arrow-right"></i>
+                        </div>
+                    )}
   </div>
 </header>
 
