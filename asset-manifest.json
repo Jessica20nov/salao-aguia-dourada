@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/salao-aguia-dourada/static/css/main.48930b03.css",
-    "main.js": "/salao-aguia-dourada/static/js/main.3b699d80.js",
+    "main.js": "/salao-aguia-dourada/static/js/main.a862393d.js",
     "static/media/bootstrap-icons.woff?": "/salao-aguia-dourada/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/salao-aguia-dourada/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "index.html": "/salao-aguia-dourada/index.html",
     "main.48930b03.css.map": "/salao-aguia-dourada/static/css/main.48930b03.css.map",
-    "main.3b699d80.js.map": "/salao-aguia-dourada/static/js/main.3b699d80.js.map"
+    "main.a862393d.js.map": "/salao-aguia-dourada/static/js/main.a862393d.js.map"
   },
   "entrypoints": [
     "static/css/main.48930b03.css",
-    "static/js/main.3b699d80.js"
+    "static/js/main.a862393d.js"
   ]
 }
