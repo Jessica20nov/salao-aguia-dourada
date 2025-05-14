@@ -1,6 +1,6 @@
 import './pages/App.css';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Products from './pages/Products';
 import Checkout from './pages/Checkout';
@@ -16,7 +16,7 @@ import FinalizarCompra from './pages/FinalizarCompra';
 function App() {
   return (
     <CartProvider>
-  <Router>
+  <BrowserRouter basename='/salao-aguia-dourada/'>
     <div>
       <header className="header-bar">
         <h1>Salão</h1>
@@ -39,7 +39,7 @@ function App() {
         </Routes>
       </div>
     </div>
-  </Router>
+  </BrowserRouter>
   </CartProvider>
   );
 }
