@@ -27,8 +27,9 @@ function App() {
       <Sidebar />
       <div className="flex-grow-1 p-3">
         <Routes>
+          <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/Cadastro" element={<Cadastro />} />
+          <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/Products" element={<Products />} />
           <Route path="/Checkout" element={<Checkout />} />
           <Route path="/Sobre" element={<Sobre />} />

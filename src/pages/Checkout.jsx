@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import "./Checkout.css";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Checkout = () => {
-  const { cart, clearCart, removeFromCart } = useContext(CartContext);
+  const { cart, removeFromCart } = useContext(CartContext);
   const navigate = useNavigate();
 
   const total = cart.reduce((acc, item) => acc + item.valor, 0);
