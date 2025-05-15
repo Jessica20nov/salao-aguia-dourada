@@ -49,7 +49,7 @@ function Login() {
       </form>
 
       <p className="cadastro-link">
-        Não tem uma conta? <a href="/salao-aguia-dourada/cadastro">Cadastre-se</a>
+        Não tem uma conta? <Link to="/salao-aguia-dourada/cadastro">Cadastre-se</Link>
       </p>
     </div>
   );
